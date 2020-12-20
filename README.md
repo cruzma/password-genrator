@@ -12,4 +12,4 @@ It was coded so that they must pick a number between 8 and 128 and also that the
 
 example below:
 
-![alt text](https://github.com/cruzma/password-genrator/blob/main/assets/images/Screenshot_2020-12-20 Password Generator.png);
+![alt text](https://github.com/cruzma/password-genrator/blob/main/assets/images/Screenshot_2020-12-20PasswordGenerator.png);
