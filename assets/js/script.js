@@ -142,6 +142,26 @@ var generatePassword = function(){
       retVal += charString.charAt(Math.floor(Math.random() * charString.length));
     }
   }
+
+  if(lowerCase === true && upperCase === false && numChar === true && specialChar === true){
+    for(var i = 0; i < passLength; i++){
+      charString += "abcdefghijklmnopqrstuvwxyz";
+      charString += "0123456789";
+      charString += "!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
+      
+      retVal += charString.charAt(Math.floor(Math.random() * charString.length));
+    }
+  }
+
+  if(lowerCase === false && upperCase === true && numChar === true && specialChar === true){
+    for(var i = 0; i < passLength; i++){
+      charString += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      charString += "0123456789";
+      charString += "!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
+      
+      retVal += charString.charAt(Math.floor(Math.random() * charString.length));
+    }
+  }
   
   // will check numeric character lowercase, uppercase and special character are true and store random string value
   
@@ -156,6 +176,7 @@ var generatePassword = function(){
     }
   }
   
+
   
   return retVal;
   
