@@ -7,8 +7,13 @@ var generatePassword = function(){
   
   var passLength = window.prompt("How long would you like your password to be?(Choose a number between 8 and 128");
   
+  if(passLength === null){
+    return "";
+  }
+
   passLength = parseInt(passLength);
-  debugger;
+  
+  
   
   // will check if number entered is between 8 and 128 and will continue to loop unitl criteria met
   
